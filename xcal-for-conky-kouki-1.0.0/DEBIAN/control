@@ -1,0 +1,8 @@
+Package: xcal-for-conky
+Priority: optional
+Section: main
+Maintainer: Reinin Oyama
+Architecture: all
+Version: 1.0.0
+Depends: fonts-ipafont-gothic, conky, xcompmgr, ruby, ruby-rubygems, rubygems-integration
+Description: Japanese Calendar for conky

@@ -1,0 +1,5 @@
+[Desktop Entry]
+Exec=/usr/bin/XCONKY
+Name=xconky
+Type=Application
+Version=1.0

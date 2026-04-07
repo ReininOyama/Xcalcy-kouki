@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+users=`ls /home`
+for user in $users;
+do
+	rm -f /home/${user}/.conkyrc
+	rm -f /home/${user}/.config/autostarst/xconky.desktop
+done
+exit 0

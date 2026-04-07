@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+gem install xcal
+users=`ls /home`
+for user in $users;
+do
+	cp /etc/skel/.conkyrc /home/${user}
+	chown ${user}:${user} /home/${user}/.conkyrc
+	if [ ! -d /home/${user}/.config/autostart ]; then
+		mkdir /home/${user}/.config/autostart
+		chown ${user}:${user} /home/${user}/.config/autostart
+	fi
+	cp /etc/skel/.config/autostart/xconky.desktop /home/${user}/.config/autostart/.
+	chown ${user}:${user} /home/${user}/.config/autostart/xconky.desktop
+done
+exit 0
