@@ -1,0 +1,4 @@
+#!/bin/sh
+sudo cp -f /usr/share/netuyo/xcalcy.rb_kouki /usr/lib/libxcalcy/xcalcy.rb
+exit 0
+
